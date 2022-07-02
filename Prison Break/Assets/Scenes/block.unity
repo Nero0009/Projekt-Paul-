@@ -182,7 +182,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -294,6 +294,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &529571725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7640558969779515294, guid: 3cd1fa454e71e8f4eb4dab996d822acf, type: 3}
+  m_PrefabInstance: {fileID: 980742655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &529571729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529571725}
+  m_Material: {fileID: 13400000, guid: 2ca7b73b9367040e28c84441ec4ebe24, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: -0.00000047683716, y: 0, z: 0}
 --- !u!1 &885923531
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +398,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: 3cd1fa454e71e8f4eb4dab996d822acf, type: 3}
+      propertyPath: m_Name
+      value: Ramp
+      objectReference: {fileID: 0}
+    - target: {fileID: -7640558969779515294, guid: 3cd1fa454e71e8f4eb4dab996d822acf, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -7146521406498821007, guid: 3cd1fa454e71e8f4eb4dab996d822acf, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -387,6 +413,10 @@ PrefabInstance:
     - target: {fileID: -7029948723529949830, guid: 3cd1fa454e71e8f4eb4dab996d822acf, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6093592463355912122, guid: 3cd1fa454e71e8f4eb4dab996d822acf, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 3cd1fa454e71e8f4eb4dab996d822acf, type: 3}
       propertyPath: m_LightProbeUsage
@@ -426,7 +456,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180480982}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2ca7b73b9367040e28c84441ec4ebe24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -444,7 +474,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423194556}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2ca7b73b9367040e28c84441ec4ebe24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -578,7 +608,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769316357}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2ca7b73b9367040e28c84441ec4ebe24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -633,7 +663,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.05
   far clip plane: 1000
   field of view: 85
   orthographic: 0
@@ -680,7 +710,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955814497}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 2ca7b73b9367040e28c84441ec4ebe24, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -738,6 +768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCam: {fileID: 375783200}
   orientation: {fileID: 23251123}
+  sensitivity: 80
   moveSpeed: 4500
   maxSpeed: 20
   grounded: 1
@@ -764,7 +795,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1962772678
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -787,8 +818,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962772674}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
