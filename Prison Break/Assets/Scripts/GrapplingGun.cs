@@ -5,6 +5,7 @@ public class GrapplingGun : MonoBehaviour {
     private LineRenderer lr;
     private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
+    
     public Transform gunTip, camera, player;
     private float maxDistance = 100f;
     private SpringJoint joint;
@@ -14,10 +15,10 @@ public class GrapplingGun : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetMouseButtonDown(1)) {
             StartGrapple();
         }
-        else if (Input.GetMouseButtonUp(0)) {
+        else if (Input.GetMouseButtonUp(1)) {
             StopGrapple();
         }
     }
