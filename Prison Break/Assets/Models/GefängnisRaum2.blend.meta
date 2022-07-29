@@ -7,8 +7,68 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: BetonWand
+    second: {fileID: 2100000, guid: 4f2e9106e981f3d488aa7cf79b30acdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Braun
+    second: {fileID: 2100000, guid: 62ecf7b96d743724fb813bed810abc88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gelblich
+    second: {fileID: 2100000, guid: 60cb56e23f5a5d64db840cb7c4db1e6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Glass
     second: {fileID: 2100000, guid: 219296e6687fa0b41b3f0ca9ec290a49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Gr\xFCn"
+    second: {fileID: 2100000, guid: e5e862e1961895a4aad5a0b4ef2fd0ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HausMaterial
+    second: {fileID: 2100000, guid: a7b5e5551e935a842a485e55f3fe1971, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LederSitz
+    second: {fileID: 2100000, guid: e93cb488c8b998f46b6473d926db67e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leuchte
+    second: {fileID: 2100000, guid: 1071b634a6d17f04a9a5bc74462c7b76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: dc79b5bd27fabb3469c496f0d6ad4813, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetallicStand
+    second: {fileID: 2100000, guid: 32d8baacb910ae94c8f034561bcf8b63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rot
+    second: {fileID: 2100000, guid: 4b563817fa2efe74986a3dc39dee2c15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tisch
+    second: {fileID: 2100000, guid: fab48371856971e43a4e4c27fd7482bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Zellent\xFCr"
+    second: {fileID: 2100000, guid: 6c3f7556e6392f947947bb764893c34f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
