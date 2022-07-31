@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   public Item[] weapons;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   private void Start() {
+    InitVariables();
+   }
+
+   private void InitVariables() {
+    weapons = new Item[4];
+   } 
 }
