@@ -8,7 +8,6 @@ public class ItemAufheben : MonoBehaviour
     [SerializeField] private LayerMask pickupLayer;
 
     private Camera cam;
-    private Inventory inventory;
 
     private void Start() {
         GetReferences();
@@ -18,8 +17,6 @@ public class ItemAufheben : MonoBehaviour
             Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2));
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit, range, pickupLayer)) {
-                Weapon newItem = hit.transform.GetComponent<ItemObject>().item as Weapon;
-                inventory.AddItem(newItem);
                 Destroy(hit.transform.gameObject);
             }
 
@@ -28,6 +25,5 @@ public class ItemAufheben : MonoBehaviour
 
     private void GetReferences() {
         cam = GetComponentInChildren<Camera>();
-        inventory = GetComponent<Inventory>();
     }
 }
