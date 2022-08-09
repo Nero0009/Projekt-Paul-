@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/1-Gef\xE4ngnis.unity"
+    guid: 0fe97145f7b4d8842be558333c53379a
+  - enabled: 1
+    path: Assets/Scenes/2-Kanalisation.unity
+    guid: ef8185c15c6aaaf40bdf5004d1720fbd
   m_configObjects: {}

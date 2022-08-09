@@ -13,7 +13,7 @@ public class ViewmodelAnims : MonoBehaviour {
     void Start() {
         anim = GetComponent<Animator>();
         //Ich nehme die Grounded Variable aus dem PlayerMovement Skript, um selbst keinen Groundcheck implementieren zu müssen.
-        playerMovement = transform.root.gameObject.GetComponent<PlayerMovement>();
+        playerMovement = transform.parent.parent.parent.gameObject.GetComponent<PlayerMovement>();
         
     }
     void Update()
