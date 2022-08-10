@@ -9,7 +9,7 @@ public class SceneTransitioner : MonoBehaviour
 
     void OnTriggerEnter(Collider collider){
         if(collider.tag == "Player"){
-            SceneManager.LoadSceneAsync(scene);
+            SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         }
     }
 }
