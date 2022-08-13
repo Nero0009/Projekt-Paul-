@@ -2149,6 +2149,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5281458695106317963, guid: b798c1c43a4a2724c9b61d9d76b4ed7f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a83359215b5a4ed4fa2bfd1c2611b8c6, type: 2}
     - target: {fileID: 5385436710156469388, guid: b798c1c43a4a2724c9b61d9d76b4ed7f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647

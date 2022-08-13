@@ -610,7 +610,7 @@ MonoBehaviour:
   grounded: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 257
+    m_Bits: 769
   counterMovement: 0.175
   maxSlopeAngle: 45
   slideForce: 400
@@ -2664,7 +2664,7 @@ BoxCollider:
   m_GameObject: {fileID: 3741812683802886332}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2785,6 +2785,7 @@ MonoBehaviour:
   gunTip: {fileID: 1201065751919210924}
   camera: {fileID: 3741812684367426223}
   player: {fileID: 1123685224990065245}
+  maxDistance: 50
 --- !u!1 &3741812683916821002
 GameObject:
   m_ObjectHideFlags: 0
