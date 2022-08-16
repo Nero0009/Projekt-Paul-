@@ -485,6 +485,8 @@ GameObject:
   - component: {fileID: 1123685224990065243}
   - component: {fileID: 1123685224990065242}
   - component: {fileID: 1123685224990065239}
+  - component: {fileID: 6711412896299729439}
+  - component: {fileID: 252358875073308666}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -630,6 +632,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pPlayer: {fileID: 1123685224990065245}
   pCanvas: {fileID: 211629353429830970}
+--- !u!114 &6711412896299729439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123685224990065244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0bc8d214f8ff30498e394b2ead0b866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
+  health: 100
+--- !u!114 &252358875073308666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123685224990065244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02cb00c749e51bc448e2a24e54e5f489, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1123685225335620140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,7 +2479,7 @@ GameObject:
   - component: {fileID: 3741812683401429008}
   m_Layer: 0
   m_Name: PlayerPrefab
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3767,6 +3795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armNummer: 49
+  rechts: 0
 --- !u!1 &4552293828695453378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,7 +3847,7 @@ Animator:
   m_GameObject: {fileID: 4552293828695453378}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 97123f99e509f6340bed42f9bcf39c24, type: 2}
+  m_Controller: {fileID: 9100000, guid: ed342fd6407ea374db1eff79bc77a1b6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3888,6 +3917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   armNummer: 50
+  rechts: 1
 --- !u!114 &4552293828695453379
 MonoBehaviour:
   m_ObjectHideFlags: 0

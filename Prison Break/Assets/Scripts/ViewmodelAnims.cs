@@ -5,6 +5,7 @@ using UnityEngine;
 public class ViewmodelAnims : MonoBehaviour {
 
     public char armNummer;
+    public bool rechts;
     float movementInput;
     PlayerMovement playerMovement;
     bool grounded;
@@ -14,6 +15,7 @@ public class ViewmodelAnims : MonoBehaviour {
         anim = GetComponent<Animator>();
         //Ich nehme die Grounded Variable aus dem PlayerMovement Skript, um selbst keinen Groundcheck implementieren zu müssen.
         playerMovement = transform.parent.parent.parent.gameObject.GetComponent<PlayerMovement>();
+        anim.SetBool("Rechts", rechts);
         
     }
     void Update()
