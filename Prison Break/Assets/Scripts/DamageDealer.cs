@@ -19,7 +19,7 @@ public class DamageDealer : MonoBehaviour
     }
 
 
-    void DealDamage(Collider coll, int schaden){
+    public void DealDamage(Collider coll, int schaden){
         if(coll.tag == target  && coll.GetComponent<DamageTaker>() != null){
                 DamageTaker taker = coll.GetComponent<DamageTaker>();
                 taker.takeDamage(damage);

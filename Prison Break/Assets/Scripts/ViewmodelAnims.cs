@@ -20,6 +20,7 @@ public class ViewmodelAnims : MonoBehaviour {
     }
     void Update()
     {
+        
         //Der Input wird eingelesen und an den Animator geschickt, um zu prüfen, ob die Lauf Animation gespielt werden soll.
         movementInput = Input.GetAxisRaw("Vertical");
         grounded = playerMovement.grounded;
@@ -29,5 +30,6 @@ public class ViewmodelAnims : MonoBehaviour {
     
         if(Input.GetButtonDown("Fire"+ armNummer)) anim.SetTrigger("Shoot");
         if(Input.GetButtonUp("Fire"+ armNummer)) anim.SetTrigger("Stop");
+        if(Input.GetButton("Fire"+ armNummer))anim.ResetTrigger("Stop");
     }
 }

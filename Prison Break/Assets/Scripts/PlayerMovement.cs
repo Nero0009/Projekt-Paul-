@@ -33,6 +33,9 @@ public class PlayerMovement : MonoBehaviour {
     public float slideForce = 400;
     public float slideCounterMovement = 0.2f;
 
+    //public GameObject arm1;
+    //public GameObject arm2;
+
     //Jumping
     private bool readyToJump = true;
     private float jumpCooldown = 0.25f;
@@ -78,8 +81,13 @@ public class PlayerMovement : MonoBehaviour {
         //Crouching
         if (Input.GetKeyDown(KeyCode.LeftControl))
             StartCrouch();
+
+          //  arm1.SetActive(false);
+          //  arm2.SetActive(false);
         if (Input.GetKeyUp(KeyCode.LeftControl))
             StopCrouch();
+           // arm1.SetActive(true);
+           // arm2.SetActive(true);
     }
 
     private void StartCrouch() {

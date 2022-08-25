@@ -11,7 +11,7 @@ public class PlayerCombatAndDeath : MonoBehaviour
     void Start()
     {
         damageTaker = GetComponent<DamageTaker>();
-        spawnPoint = transform.localPosition;
+        spawnPoint = transform.position;
     }
 
     void Update()
