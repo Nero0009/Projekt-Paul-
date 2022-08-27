@@ -12,4 +12,9 @@ public class SceneTransitioner : MonoBehaviour
             SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         }
     }
+    void OnTriggerExit(Collider collider){
+        if(collider.tag == "Player"){
+            SceneManager.UnloadSceneAsync(scene);
+        }
+    }
 }

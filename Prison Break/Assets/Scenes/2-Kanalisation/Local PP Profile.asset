@@ -98,6 +98,7 @@ MonoBehaviour:
   - {fileID: -2243272408805217582}
   - {fileID: -4387204226964584426}
   - {fileID: 2903198831427698613}
+  - {fileID: 3919033731687433987}
 --- !u!114 &2903198831427698613
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -110,10 +111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   threshold:
     m_OverrideState: 0
-    m_Value: 0.9
+    m_Value: 13
   intensity:
     m_OverrideState: 1
     m_Value: 0.5
@@ -138,3 +139,19 @@ MonoBehaviour:
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &3919033731687433987
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
+  m_Name: Tonemapping
+  m_EditorClassIdentifier: 
+  active: 1
+  mode:
+    m_OverrideState: 1
+    m_Value: 2

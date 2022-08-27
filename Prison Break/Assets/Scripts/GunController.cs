@@ -40,7 +40,7 @@ public class GunController : MonoBehaviour
         RaycastHit hit;
         Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 100f, mask);
         clone = Instantiate(hitParticles, hit.point, new Quaternion());
-        if(hit.collider.GetComponent<DamageTaker>()!= null){
+        if(hit.collider != null && hit.collider.GetComponent<DamageTaker>()!= null){
             hit.collider.GetComponent<DamageTaker>().takeDamage(1);
         }
     }

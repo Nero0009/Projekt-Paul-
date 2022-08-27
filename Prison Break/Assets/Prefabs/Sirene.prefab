@@ -48,7 +48,7 @@ Light:
   m_Intensity: 300
   m_Range: 40
   m_SpotAngle: 90
-  m_InnerSpotAngle: 90
+  m_InnerSpotAngle: 75
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -332,7 +332,7 @@ Light:
   m_Intensity: 300
   m_Range: 40
   m_SpotAngle: 90
-  m_InnerSpotAngle: 76.71772
+  m_InnerSpotAngle: 75
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
