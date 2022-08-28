@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17286, g: 0.2160185, b: 0.29797372, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10145,6 +10145,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: Enemy
   damage: 1
+--- !u!4 &1776477805 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3741812684367426223, guid: 2481df8d06f31634c9e68af545855eae, type: 3}
+  m_PrefabInstance: {fileID: 3741812683753015352}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3675183408905367501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10241,6 +10246,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1123685224990065239, guid: 2481df8d06f31634c9e68af545855eae, type: 3}
+      propertyPath: pCamera
+      value: 
+      objectReference: {fileID: 1776477805}
     - target: {fileID: 1123685224990065242, guid: 2481df8d06f31634c9e68af545855eae, type: 3}
       propertyPath: arm1
       value: 
@@ -10255,15 +10264,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3741812683401429008, guid: 2481df8d06f31634c9e68af545855eae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.3
+      value: -178
       objectReference: {fileID: 0}
     - target: {fileID: 3741812683401429008, guid: 2481df8d06f31634c9e68af545855eae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 649.1
+      value: 574
       objectReference: {fileID: 0}
     - target: {fileID: 3741812683401429008, guid: 2481df8d06f31634c9e68af545855eae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47
+      value: 369
       objectReference: {fileID: 0}
     - target: {fileID: 3741812683401429008, guid: 2481df8d06f31634c9e68af545855eae, type: 3}
       propertyPath: m_LocalRotation.w
